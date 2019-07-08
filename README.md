@@ -94,7 +94,7 @@ _<sup>1</sup> Without a Premium or Enterprise account, Twitter provides only acc
 ### OVERVIEW
 I farmed around 870k Tweets that reference Coachella using [taspinar's](https://github.com/taspinar) [twitterscraper](https://github.com/taspinar/twitterscraper), and sorted through them to find any mentions of musical artists.
 
-Tweets were collceted in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03
+Tweets were collected in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03
 
 I use Python to obtain a weighted adjacency matrix representing how often each artist is co-mentioned with another artist relative to all other co-mentions. 
 
