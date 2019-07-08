@@ -73,7 +73,7 @@ There are a few more assumptions that you'll have to accept as true:
    >
    >89:87 PM - 55 Mon 1127
    
-   would be cruel. And needlessly pushing my already poor understanding of Regular Expressions. 
+   would be cruel. And needlessly push my already poor understanding of Regular Expressions. 
 
 ...and so on. More assumptions can be specified, but generally they are reconfigurations of:
 
