@@ -94,7 +94,7 @@ _It is slightly more economical to scrape the front-end (free)._
 ## THE PROCESS
 
 ### OVERVIEW
-I farmed around 870k Tweets that reference Coachella using [taspinar's](https://github.com/taspinar) [twitterscraper](https://github.com/taspinar/twitterscraper) and sorted through them to find any mentions of musical artists.
+I farmed around 870k Tweets that reference Coachella using [taspinar's](https://github.com/taspinar) [twitterscraper](https://github.com/taspinar/twitterscraper) and sorted through them to find any mentions of musical artists within the lineup.
 
 Tweets were collected in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03
 
