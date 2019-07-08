@@ -87,9 +87,9 @@ Should you ever read my code, I apologize in advance.
 
 **_It is not the intent of the author to damage, harm, or otherwise distress any persons, but the author recognizes that written within this repository are things that are potentially damaging, harmful, or distressful to mental health, most especially if the reader should have any expertise in object-oriented programming or mathematics beyond a high-school level._**
 
-_<sup>1</sup> Without a Premium or Enterprise account, Twitter provides access only to the last 7 days of Tweets since the current date, while limiting the number of Tweets returned per request. This is decidedly not a good thing if you do not have the patience to scrape Tweets every week for five months or cannot afford to drop the [$1900](https://developer.twitter.com/en/docs/tweets/search/overview/premium) on a Premium Developer account to get 1 million tweets  - only 500 Tweets per request adds up._ 
+_<sup>1</sup> Without a Premium or Enterprise account, Twitter provides access only to the last 7 days of Tweets since the current date, while limiting the number of Tweets returned per request to 180 on a user request. This is decidedly not a good thing if you do not have the patience to scrape Tweets every week for five months or cannot afford to drop the [$1900](https://developer.twitter.com/en/docs/tweets/search/overview/premium) on a Premium Developer account to get 1 million tweets  - only 500 Tweets per request adds up._ 
 
-_It is slightly more economical and practical to scrape the front-end (free)._ 
+_It is slightly more economical (free) to scrape the front-end._ 
 
 ## THE PROCESS
 
