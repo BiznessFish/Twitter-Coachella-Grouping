@@ -40,7 +40,7 @@ There are a few more assumptions that you'll have to accept as true:
    >
    >9:99 AM - 32 Jab 2291
    
-   would spell disaster. Currently [Twitter's REST API](https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/standard-operators) provides you with ways to search for only positive tweets so that we can avoid that nasty negativity, but there are certain limitations to using the official API.<sup>1</sup> Without the official API (and missing Tweets that can't _reliably_ be deemed positive), I would have to perform [sentiment analysis and NLP](https://en.wikipedia.org/wiki/Sentiment_analysis) on these Tweets. Which is really hard. 
+   would spell disaster. Currently [Twitter's REST API](https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/standard-operators) provides you with ways to search for only positive tweets so that we can avoid that nasty negativity, but there are certain limitations to using the official API.<sup>1</sup> Without the official API (or letting go of Tweets that couldn't _reliably_ be deemed positive), I would have to perform [sentiment analysis and NLP](https://en.wikipedia.org/wiki/Sentiment_analysis) on these Tweets. Which is really hard. 
 
 2. **When people tweet about artists, it is about the music.**
 
