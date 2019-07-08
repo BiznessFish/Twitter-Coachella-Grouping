@@ -75,30 +75,33 @@ There are a few more assumptions that you'll have to accept as true:
    
    would be cruel. And needlessly pushing my already poor understanding of Regular Expressions. 
 
-...and so on. More assumptions can be added, but generally they are reconfigurations of:
+...and so on. More assumptions can be specified, but generally they are reconfigurations of:
 
 _If and only if people tweet about artists, they like the music._
 
 ### AUTHOR'S DISCLAIMER
 
-Around 99% of everything contained here I figured out as I went along. This is neither well planned nor well executed. The only formal background I have had in coding is an Intro to Programming class I once took Junior year of college. I am not very good at this. 
+Around 99% of everything contained here I figured out as I went along. This is neither well-planned nor well-executed. The only formal background I have had in coding is an Intro to Programming class I once took Junior year of college. I am not very good at this. 
 
 Should you ever read my code, I apologize in advance. 
 
 _It is not the intent of the author to damage, harm, or otherwise distress any persons, but the author recognizes that written within this repository are things that are potentially damaging, harmful, or distressful to mental health, most especially if the reader should have any expertise in object-oriented programming or mathematics beyond a high-school level._
 
-_<sup>1</sup> Without a Premium or Enterprise account, Twitter provides only access to the last 7 days of Tweets. This is decidedly not a good thing if you are starting this project late and cannot afford to drop the [$1900](https://developer.twitter.com/en/docs/tweets/search/overview/premium) on a Premium Developer account to get 1 million tweets. It is slightly more economical to scrape the front-end (free)._ 
+_<sup>1</sup> Without a Premium or Enterprise account, Twitter provides access only to the last 7 days of Tweets since the current date, while limiting the number of Tweets returned per request. This is decidedly not a good thing if you are starting this project late and cannot afford to drop the [$1900](https://developer.twitter.com/en/docs/tweets/search/overview/premium) on a Premium Developer account to get 1 million tweets  - only 500 Tweets per request adds up._ 
+
+_It is slightly more economical to scrape the front-end (free)._ 
 
 ## THE PROCESS
 
 ### OVERVIEW
-I farmed around 870k Tweets that reference Coachella using [taspinar's](https://github.com/taspinar) [twitterscraper](https://github.com/taspinar/twitterscraper), and sorted through them to find any mentions of musical artists.
+I farmed around 870k Tweets that reference Coachella using [taspinar's](https://github.com/taspinar) [twitterscraper](https://github.com/taspinar/twitterscraper) and sorted through them to find any mentions of musical artists.
 
 Tweets were collected in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03
 
 I use Python to obtain a weighted adjacency matrix representing how often each artist is co-mentioned with another artist relative to all other co-mentions. 
 
-I then throw it into R, make it an igraph object, and render a visNetwork object from it.
+I then import the adjacency matrix into an R session, create an igraph object from the matrix, and render a visNetwork object from the igraph object.
+
 
 
 
