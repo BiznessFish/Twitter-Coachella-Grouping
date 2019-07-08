@@ -84,8 +84,12 @@ _If and only if people tweet about artists, they like the music._
 The only formal background I have had in coding is an Intro to Programming class I took Junior year of college. I am not very good at this. I am sorry. 
 
 _<sup>1</sup> Without a Premium or Enterprise account, Twitter provides only access to the last 7 days of Tweets. This is decidedly not a good thing if you are starting this project late and cannot afford to drop the [$1900](https://developer.twitter.com/en/docs/tweets/search/overview/premium) on a Premium Developer account to get 1 million tweets. It is slightly more economical to scrape the front-end (free)._ 
+
 ## THE PROCESS
-I farmed around 850k Tweets that reference Coachella using [taspinar's](https://github.com/taspinar) [twitterscraper](https://github.com/taspinar/twitterscraper), and sorted through them to find any mentions of musical artists.
+
+I farmed around 870k Tweets that reference Coachella using [taspinar's](https://github.com/taspinar) [twitterscraper](https://github.com/taspinar/twitterscraper), and sorted through them to find any mentions of musical artists.
+
+Tweets were collceted in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03
 
 
 
