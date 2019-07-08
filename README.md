@@ -85,7 +85,7 @@ Around 99% of everything contained here I figured out as I went along. This is n
 
 Should you ever read my code, I apologize in advance. 
 
-_It is not the intent of the author to damage, harm, or otherwise distress any persons, but the author recognizes that written within this repository are things that are potentially damaging, harmful, or distressful to mental health, most especially if the reader should have any expertise in object-oriented programming or mathematics beyond a high-school level._
+**_It is not the intent of the author to damage, harm, or otherwise distress any persons, but the author recognizes that written within this repository are things that are potentially damaging, harmful, or distressful to mental health, most especially if the reader should have any expertise in object-oriented programming or mathematics beyond a high-school level._**
 
 _<sup>1</sup> Without a Premium or Enterprise account, Twitter provides access only to the last 7 days of Tweets since the current date, while limiting the number of Tweets returned per request. This is decidedly not a good thing if you are starting this project late and cannot afford to drop the [$1900](https://developer.twitter.com/en/docs/tweets/search/overview/premium) on a Premium Developer account to get 1 million tweets  - only 500 Tweets per request adds up._ 
 
