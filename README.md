@@ -107,7 +107,9 @@ I then import the adjacency matrix into an R session, create an igraph object fr
 MANY thanks to:
 
 http://www.shizukalab.com/toolkits/sna/sna_data
+
 https://www.jessesadler.com/post/network-analysis-with-r/
+
 https://kateto.net/network-visualization
 
 
