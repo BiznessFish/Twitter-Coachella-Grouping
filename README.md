@@ -9,7 +9,11 @@ Artist co-mentions are collected into an adjacecny matrix. A community detection
 
 This is a very basic way to visualize insights, if any, on the way people talk about musical artists, such as (hopefully) what artists are considered "similar" or are liked similarly by Twitter users.
 
-Below is an example:
+I tried to write the code here in such a way that it should be a simple task to do the same for just about any other topic of your choosing. All you should need are a list of things you're looking for within your tweets and a working knowledge of Regular Expression. 
+
+This is my first (!!) coding project I have ever done (very exciting!!). If you have any resources you should want to point me to, tips or tricks on how to better code, or any further projects, please do not hesitate to contact me as I would be most grateful for feedback of any kind.
+
+Below is an example of the kind of Tweets we are farming for:
 >**@tuhleequh**
 >
 >ARIANA GRANDE • LOS TUCANES • THE 1975 • BILLIE EILLISH • YG • DVSN 
@@ -66,14 +70,14 @@ There are a few more assumptions that you'll have to accept as true:
    
 4. **When people tweet about artists, they are not using any nicknames that I haven't thought of.**
 
-   So a tweet like this (really, who would do this?):
+   So a tweet like this (really, who does this?):
    >**@CoachellaLuvr8000**
    >
    >I am so excited to see Tame Imp. and Åriånå Grånde.
    >
    >89:87 PM - 55 Mon 1127
    
-   would be cruel. And needlessly push my already poor understanding of Regular Expressions. 
+   would be cruel. And needlessly make me write Regexes that I have no business writing without supervision. 
 
 ...and so on. More assumptions can be specified, but generally they are reconfigurations of:
 
@@ -87,18 +91,18 @@ Should you ever read my code, I apologize in advance.
 
 **_It is not the intent of the author to damage, harm, or otherwise distress any persons, but the author recognizes that written within this repository are things that are potentially damaging, harmful, or distressful to mental health, most especially if the reader should have any expertise in object-oriented programming or mathematics beyond a high-school level._**
 
-_<sup>1</sup> Without a Premium or Enterprise account, Twitter provides access only to the last 7 days of Tweets since the current date, while limiting the number of Tweets returned per request to 180 on a user request. This is decidedly not a good thing if you do not have the patience to scrape Tweets every week for five months or cannot afford to drop the [$1900](https://developer.twitter.com/en/docs/tweets/search/overview/premium) on a Premium Developer account to get 1 million tweets  - only 500 Tweets per request adds up._ 
+_<sup>1</sup> Without a Premium or Enterprise account, Twitter provides access only to the last 7 days of Tweets since the current date, while limiting the number of Tweets returned per request to 180 on a user request. This is decidedly not a good thing if you do not have the patience to scrape Tweets every week for five months or cannot afford to drop the [$1900](https://developer.twitter.com/en/docs/tweets/search/overview/premium) on a Premium Developer account to get 1 million tweets._ 
 
 _It is slightly more economical (free) to scrape the front-end._ 
 
 ## THE PROCESS
 
 ### OVERVIEW
-I farmed around 870k Tweets that reference Coachella using [taspinar's](https://github.com/taspinar) [twitterscraper](https://github.com/taspinar/twitterscraper) and sorted through them to find any mentions of musical artists within the lineup.
+I farmed around 870k Tweets that reference Coachella using [taspinar's](https://github.com/taspinar) [twitterscraper](https://github.com/taspinar/twitterscraper) and sorted through them to find any mentions of all of the musical artists within the lineup.
 
 Tweets were collected in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03
 
-I use Python to obtain a weighted adjacency matrix representing how often each artist is co-mentioned with another artist relative to all other co-mentions. 
+I use Python to obtain a weighted adjacency matrix representing how often each artist is co-mentioned with another artist.
 
 I then import the adjacency matrix into an R session, create an igraph object from the matrix, and render a visNetwork object from the igraph object.
 
@@ -112,4 +116,5 @@ https://www.jessesadler.com/post/network-analysis-with-r/
 
 https://kateto.net/network-visualization
 
+https://rpubs.com/mfwade
 
