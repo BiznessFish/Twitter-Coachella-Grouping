@@ -90,7 +90,9 @@ def createMatrix(artists_regex_filename, matched_artists_filename):
     :param matched_artists_filename: Filename of all artists found within a list of Tweets.
     :return: N/A
     """
-#takes from a pre-made list of strings to be matched as regular expressions. Probably better to do this in a dictionary rather than a nest list (?)
+# Takes from a pre-made list of strings to be matched as regular expressions.
+# Probably better to do this in a dictionary rather than a nest list (?)
+    # TODO : Rewrite to not use pandas...What were you thinking?
     artists = pd.read_csv(artists_regex_filename)
     list_of_artists = artists['Name'].tolist()
 
@@ -104,7 +106,8 @@ def createMatrix(artists_regex_filename, matched_artists_filename):
         artists_in_tweet = mentioned_artists.split(',')
 
 #getting rid of tweets that mention only the headliners, because these tweets are not interesting to us
-        if not (len(artists_in_tweet) == 3 and 'Childish Gambino' in artists_in_tweet and 'Ariana Grande' in artists_in_tweet and 'Tame Impala' in artists_in_tweet):
+        if not (len(artists_in_tweet) == 3 and 'Childish Gambino' in artists_in_tweet
+                and 'Ariana Grande' in artists_in_tweet and 'Tame Impala' in artists_in_tweet):
 
 #each permutation within a tweet represents a linkage. append to the matrix for each one found.
             edges_in_tweet = itertools.permutations(artists_in_tweet, 2)
