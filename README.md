@@ -5,7 +5,7 @@ Visualize groupings of musical artists based on artist co-mentions within a twee
 
 This project uses a simple series of scripts to farm Tweets about Coachella, analyze them, and visualize them.
 
-Artist co-mentions are collected into an adjacecny matrix. A community detection algorithm is then used in order to group artists, and they are visualized using visNetwork. 
+Artist co-mentions are collected into an adjacecny matrix. A community detection algorithm (Louvain) is then used in order to group artists, and they are visualized using visNetwork. 
 
 This is a very basic way to visualize insights, if any, on the way people talk about musical artists, such as (hopefully) what artists are considered "similar" or are liked similarly by Twitter users.
 
@@ -109,7 +109,7 @@ A file of all of the artist names are also needed to build the adjacency matrix 
 
 Tweets were collected in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03
 
-I use Python to obtain a weighted adjacency matrix representing how often each artist is co-mentioned with another artist.
+I used Python to create an adjacency matrix that is weighted by 
 
 I then import the adjacency matrix into an R session, create an igraph object from the matrix, and render a visNetwork object from the igraph object.
 
@@ -117,11 +117,11 @@ I then import the adjacency matrix into an R session, create an igraph object fr
 
 MANY thanks to:
 
-http://www.shizukalab.com/toolkits/sna/sna_data
+(http://www.shizukalab.com/toolkits/sna/sna_data)
 
-https://www.jessesadler.com/post/network-analysis-with-r/
+(https://www.jessesadler.com/post/network-analysis-with-r/)
 
-https://kateto.net/network-visualization
+(https://kateto.net/network-visualization)
 
-https://rpubs.com/mfwade
+(https://rpubs.com/mfwade)
 
