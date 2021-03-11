@@ -100,6 +100,13 @@ _It is slightly more economical (free) to scrape the front-end._
 ### OVERVIEW
 I farmed around 870k Tweets that reference Coachella using [taspinar's](https://github.com/taspinar) [twitterscraper](https://github.com/taspinar/twitterscraper) and sorted through them to find any mentions of all of the musical artists within the lineup.
 
+To install twitterscraper run:
+```pip3 install twitterscraper```
+
+Scraped tweets are provided for convenience.
+
+A file of all of the artist names are also needed to build the adjacency matrix of the weighted graph. This is also provided.
+
 Tweets were collected in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03
 
 I use Python to obtain a weighted adjacency matrix representing how often each artist is co-mentioned with another artist.
