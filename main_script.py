@@ -118,7 +118,7 @@ def createMatrix(artists_regex_filename, matched_artists_filename):
 # This presents some problems with co-mentions as some co-mentions might be overrepresented.
 # One solution is to divide each co-mention (twice) by the total number of co-mentions each artist has. This
 # will (hopefully) make sure the matrix accurately reflects the association between artists relative to the total
-# number of co-mentions for each artist regardless of how popular they are.
+# number of co-mentions for each artist regardless of how popular they are. This is (somewhat) similar to td-idf.
 
     df_matrix = pd.DataFrame(data=matrix_of_artists[0:, 0:], index=list_of_artists[0:], columns=list_of_artists[0:])
     df_matrix["sum"] = df_matrix.sum(axis=1)
