@@ -109,7 +109,7 @@ A file of all of the artist names are also needed to build the adjacency matrix 
 
 Tweets were collected in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03
 
-I used Python to create an adjacency matrix that is weighted by 
+I used Python to create an adjacency matrix that is weighted by how often the artist was mentioned in a style similar to td-idf. 
 
 I then import the adjacency matrix into an R session, create an igraph object from the matrix, and render a visNetwork object from the igraph object.
 
