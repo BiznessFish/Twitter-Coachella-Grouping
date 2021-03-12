@@ -108,7 +108,7 @@ Tweets were collected in the time period between 2019-01-03 (when the Coachella 
 
 Scraped tweets are provided in a ZIP file.
 
-A file of all of the artist names are also needed to scrape the tweets and build the adjacency matrix of the weighted graph. This is also provided.
+A file of all of the artist names and their corresponding regexes are also needed to scrape the tweets and build the adjacency matrix of the weighted graph. This is also provided.
 
 I used Python to create an adjacency matrix that is weighted by how often the artist was mentioned in a style similar to td-idf. 
 
