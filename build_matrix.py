@@ -4,31 +4,8 @@ import itertools
 import re
 import time
 import csv
-import twitterscraper
-import datetime as dt
-
-def scrapingTweets(since,until):
-    """
-    Scrapes Tweets within a date range and writes them to a csv file. Scrapes Tweet text, Tweet ID, and Timestamp
-    :param since: When you want to start. Should be in YYYY-MM-DD format.
-    :param until: When you want to stop. Should be in YYYY-MM-DD format.
-    :return: Filename of csv with tweets scraped
-    """
-    # upper bound and lower bound of queries. sometimes it is necessary to rescrape certain dates because twitter will start blocking your queries
-    startDate = dt.date(since)
-    endDate = dt.date(until)
-
-    scraped_tweets_filename = "Coachella" + startDate.strftime("%Y" + "-" + "%m" + "-" + "%d") + "_" + endDate.strftime(
-        ("%Y" + "-" + "%m" + "-" + "%d"))
-    # queries tweets and writes each tweet to file
-    collected_tweets = twitterscraper.query_tweets("Scraped Coachella Tweets", limit=None, begindate=startDate, enddate=endDate)
-    with open(scraped_tweets_filename, 'w') as file:
-        for tweet in collected_tweets:
-            tweet_writer = csv.writer(file, delimiter=';', quoting=csv.QUOTE_ALL)
-            tweet_writer.writerow(
-                [tweet.id, tweet.timestamp.strftime("%m/%d/%Y %H:%M:%S"), tweet.text.replace('\n', ' '), tweet.user])
-
-    return scraped_tweets_filename
+from os import path
+import sys
 
 def matchArtistInTweets(artists_regex_filename, scraped_tweets_filename):
     """
@@ -83,6 +60,7 @@ def matchArtistInTweets(artists_regex_filename, scraped_tweets_filename):
 
     return matched_artists_filename
 
+
 def createMatrix(artists_regex_filename, matched_artists_filename):
     """
     Creates an adjacency matrix of artist co-mentions, weights them, and writes to a file called "relationship_matrix.csv".
@@ -135,13 +113,26 @@ def createMatrix(artists_regex_filename, matched_artists_filename):
 
 if __name__ == "__main__":
 
-    # You will first have to have a list of the things you're looking for along with the associated regular expression(s)
+    # # You will first have to have a list of the things you're looking for along with the associated regular expression(s)
+    try:
+        if not path.exists('Artist_names.csv'):
+            raise FileNotFoundError("You need Artist_names.csv in this directory")
+    except FileNotFoundError as error:
+        print(error)
+        sys.exit(1)
+
     artists = pd.read_csv("Artist_names.csv")
 
-    # Arguments here for the date ranges are set manually. If certain dates are missing, simply rerun the scraper
-    # for those dates and join the missing tweets to the file before continuing. Comment this out if you are using
-    # the given data set and plug in the filename for the scraped tweets
-    scraped_tweets_filename = scrapingTweets('2019-01-03', '2019-05-03')
+    try:
+        scraped_tweets_filename = sys.argv[1]
+        if not path.exists(scraped_tweets_filename):
+            raise FileNotFoundError("File of scraped tweets not found")
+    except FileNotFoundError as error:
+        print(error)
+        sys.exit(1)
+    except IndexError:
+        print("Need to provide exactly one argument!")
+        sys.exit(1)
 
     matched_artists_filename = matchArtistInTweets(artists, scraped_tweets_filename)
 
