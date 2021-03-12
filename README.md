@@ -104,7 +104,7 @@ To run the scraper, simply run the `scrape_tweets.py` script with your desired b
 
 ```python3 scrape_tweets.py 2019-01-03 2019-05-03```
 
-#### UPDATE: Most/All scrapers now no longer work, including twitterscraper. 
+#### UPDATE: As of March 2021, most/all scrapers now no longer work, including twitterscraper. 
 
 Tweets were collected in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03.
 
