@@ -4,6 +4,7 @@ import datetime as dt
 import sys
 import re
 
+
 def scrapingTweets(since,until):
     """
     Scrapes Tweets within a date range and writes them to a csv file. Scrapes Tweet text, Tweet ID, and Timestamp
@@ -11,19 +12,25 @@ def scrapingTweets(since,until):
     :param until: When you want to stop. Should be in YYYY-MM-DD format.
     :return: Filename of csv with tweets scraped
     """
-    # upper bound and lower bound of queries. sometimes it is necessary to rescrape certain dates because twitter will start blocking your queries
+    # upper bound and lower bound of queries. sometimes it is necessary to rescrape certain dates because twitter will
+    # start blocking your queries
+
     startDate = dt.datetime.strptime(since, '%Y-%m-%d').date()
     endDate = dt.datetime.strptime(until, '%Y-%m-%d').date()
 
     scraped_tweets_filename = "Coachella" + startDate.strftime("%Y" + "-" + "%m" + "-" + "%d") + "_" + endDate.strftime(
         ("%Y" + "-" + "%m" + "-" + "%d"))
     # queries tweets and writes each tweet to file
-    collected_tweets = twitterscraper.query_tweets("Scraped Coachella Tweets", limit=None, begindate=startDate, enddate=endDate)
+
+    collected_tweets = twitterscraper.query_tweets("Coachella", limit=None, begindate=startDate, enddate=endDate)
+
     with open(scraped_tweets_filename, 'w') as file:
+
         for tweet in collected_tweets:
             tweet_writer = csv.writer(file, delimiter=';', quoting=csv.QUOTE_ALL)
             tweet_writer.writerow(
                 [tweet.id, tweet.timestamp.strftime("%m/%d/%Y %H:%M:%S"), tweet.text.replace('\n', ' '), tweet.user])
+
 
 
 if __name__ == "__main__":
