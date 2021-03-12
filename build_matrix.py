@@ -113,7 +113,7 @@ def createMatrix(artists_regex_filename, matched_artists_filename):
 
 if __name__ == "__main__":
 
-    # # You will first have to have a list of the things you're looking for along with the associated regular expression(s)
+    # You will first have to have a list of the things you're looking for along with the associated regular expression(s)
     try:
         if not path.exists('Artist_names.csv'):
             raise FileNotFoundError("You need Artist_names.csv in this directory")
