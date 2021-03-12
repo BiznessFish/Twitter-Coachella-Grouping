@@ -104,11 +104,13 @@ To run the scraper, simply run the `scrape_tweets.py` script with your desired b
 
 ```python3 scrape_tweets.py 2019-01-03 2019-05-03```
 
+#### UPDATE: Most/All scrapers now no longer work, including twitterscraper. 
+
 Tweets were collected in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03.
 
 Scraped tweets are provided in a ZIP file.
 
-A file of all of the artist names and their corresponding regexes are also needed to scrape the tweets and build the adjacency matrix of the weighted graph. This is also provided.
+A file of all of the artist names and their corresponding regexes are also needed to scrape the tweets and build the adjacency matrix of the weighted graph. This is also provided. 
 
 I used Python to create an adjacency matrix that is weighted by how often the artist was mentioned in a style similar to td-idf. 
 
@@ -118,6 +120,7 @@ To build the adjcency matrix that you need to load into visNetwork, run the `bui
 
 I then import the adjacency matrix into an R session, create an igraph object from the matrix, and render a visNetwork object from the igraph object.
 
+This code can be pretty easily rewritten to match any topic and any "things" that you want to see connected. For example, we can substitute out Coachella for Cheese and have artist names be names of cheeses. The world is your oyster!
 
 
 MANY thanks to:
