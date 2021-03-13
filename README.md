@@ -1,6 +1,8 @@
 # Twitter-Coachella-Grouping
 Visualize groupings of musical artists based on artist co-mentions within a tweet
 
+#### UPDATE: As of March 2021, most/all scrapers now no longer work, including twitterscraper which is used in this project.
+
 ## BACKGROUND
 
 This project uses a simple series of scripts to farm Tweets about Coachella, analyze them, and visualize them.
@@ -102,9 +104,7 @@ To install twitterscraper run:
 
 To run the scraper, simply run the `scrape_tweets.py` script with your desired beginning and end dates in that order, e.g.:
 
-```python3 scrape_tweets.py 2019-01-03 2019-05-03```
-
-#### UPDATE: As of March 2021, most/all scrapers now no longer work, including twitterscraper. 
+```python3 scrape_tweets.py 2019-01-03 2019-05-03``` 
 
 Tweets were collected in the time period between 2019-01-03 (when the Coachella line-up was first announced) to four months after, 2019-05-03.
 
