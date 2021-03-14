@@ -7,7 +7,7 @@ Visualize groupings of musical artists based on artist co-mentions within a twee
 
 This project uses a simple series of scripts to farm Tweets about Coachella, analyze them, and visualize them.
 
-Artist co-mentions are collected into an adjacecny matrix. A community detection algorithm (Louvain) is then used in order to group artists, and they are visualized using visNetwork. 
+Artist co-mentions are collected into an adjacency matrix. A community detection algorithm (Louvain) is then used in order to group artists, and they are visualized using Gephi. 
 
 This is a very basic way to visualize insights, if any, on the way people talk about musical artists, such as (hopefully) what artists are considered "similar" or are liked similarly by Twitter users.
 
@@ -142,6 +142,6 @@ For easier viewing, turn on "Show Node Labels".
 
 We can see some interesting things right off the bat. For example, Hispanic artists like Rosalía, Mon Laferte, Bad Bunny are all clustered as dark green. Orange seems to be the cluster of "festival" music; Hardstyle DJs like Kayzo, Deep House artists like Yotto, or Techno artists like Cirez D. Light blue and lavender both seem to be, at least from my perspective, more popular and well known artists like BLACKPINK or Ariana Grande. 
 
-
+There are definitely more interesting insights that can be gained from this data. Visualizing this in Gephi is just one of them! 
 
 
