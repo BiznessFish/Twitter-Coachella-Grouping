@@ -118,7 +118,7 @@ To build the adjcency matrix that you need to load into visNetwork, run the `bui
 
 ```python3 build_matrix.py All_tweets_semi```
 
-![build matrix](/readme images/build_matrix in action.png)
+![build matrix](/readme_images/build_matrix.png)
 
 To visualize it, import the adjacency matrix into a [Gephi](https://gephi.org/) session.
 
