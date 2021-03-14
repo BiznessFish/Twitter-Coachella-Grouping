@@ -120,7 +120,15 @@ To build the adjcency matrix that you need to load into visNetwork, run the `bui
 
 I then import the adjacency matrix into an R session, create an igraph object from the matrix, and render a visNetwork object from the igraph object.
 
-This code can be pretty easily rewritten to match any topic and any "things" that you want to see connected. For example, we can substitute out Coachella for Cheese and have artist names be names of cheeses. The world is your oyster!
+In an R session, load in the matrix from a csv file into a dataframe, and convert it into a matrix.
+
+```df <- read.csv("relationship_matrix.csv")
+matrix <- as.matrix(df)
+
+
+
+
+
 
 
 MANY thanks to:
