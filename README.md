@@ -13,8 +13,6 @@ This is a very basic way to visualize insights, if any, on the way people talk a
 
 I tried to write the code here in such a way that it should be a simple task to do the same for just about any other topic of your choosing. All you should need are a list of things you're looking for within your tweets and a working knowledge of Regular Expression. 
 
-This is my first (!!) coding project I have ever done (very exciting!!). If you have any resources you should want to point me to, tips or tricks on how to better code, or any further projects, please do not hesitate to contact me as I would be most grateful for feedback of any kind.
-
 Below is an example of the kind of Tweets we are farming for:
 >**@tuhleequh**
 >
