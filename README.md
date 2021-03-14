@@ -118,26 +118,18 @@ To build the adjcency matrix that you need to load into visNetwork, run the `bui
 
 ```python3 build_matrix.py All_tweets_semi```
 
-I then import the adjacency matrix into an R session, create an igraph object from the matrix, and render a visNetwork object from the igraph object.
+![build matrix](/readme images/build_matrix in action.png)
 
-In an R session, load in the matrix from a csv file into a dataframe, and convert it into a matrix.
+To visualize it, import the adjacency matrix into a [Gephi](https://gephi.org/) session.
 
-```df <- read.csv("relationship_matrix.csv")
-matrix <- as.matrix(df)
-```
+To implement [Louvain](https://en.wikipedia.org/wiki/Louvain_method) community detection, click on the Statistics tab on the right hand side. Click 'Run' on the Modularity attribute, under Network Overview to calculate a modularity score. To visualize this, on the top left, set the color of each node using the calculated Modularity attribute. 
 
-
+For easier viewing, turn on "Show Node Labels".
 
 
 
+We can see some interesting things right off the bat. For example, Hispanic artists like Rosalía, Mon Laferte, Bad Bunny are all clustered as dark green. Orange seems to be the cluster of "festival" music; Hardstyle DJs like Kayzo, Deep House artists like Yotto, or Techno artists like Cirez D. Light blue and lavender both seem to be, at least from my perspective, more popular and well known artists like BLACKPINK or Ariana Grande. 
 
-MANY thanks to:
 
-(http://www.shizukalab.com/toolkits/sna/sna_data)
 
-(https://www.jessesadler.com/post/network-analysis-with-r/)
-
-(https://kateto.net/network-visualization)
-
-(https://rpubs.com/mfwade)
 
