@@ -120,13 +120,25 @@ To build the adjcency matrix that you need to load into visNetwork, run the `bui
 
 ![build matrix](/readme_images/build_matrix.png)
 
-To visualize it, import the adjacency matrix into a [Gephi](https://gephi.org/) session.
+To visualize it, import the adjacency matrix into a [Gephi](https://gephi.org/) session. I've used Force Atlas as the layout with these settings:
+
+![force atlas](/readme_images/force_atlas.png)
+
+The graph should look something like this:
+
+![graph](/readme_images/graph_no_color.png)
 
 To implement [Louvain](https://en.wikipedia.org/wiki/Louvain_method) community detection, click on the Statistics tab on the right hand side. Click 'Run' on the Modularity attribute, under Network Overview to calculate a modularity score. To visualize this, on the top left, set the color of each node using the calculated Modularity attribute. 
 
+![modulairty](/readme_images/modularity.png)
+
+![colored graph](/readme_images/graph.png)
+
 For easier viewing, turn on "Show Node Labels".
 
+![node labels](/readme_images/node_labels.png)
 
+![colored graph](/readme_images/graph_labeled.png)
 
 We can see some interesting things right off the bat. For example, Hispanic artists like Rosalía, Mon Laferte, Bad Bunny are all clustered as dark green. Orange seems to be the cluster of "festival" music; Hardstyle DJs like Kayzo, Deep House artists like Yotto, or Techno artists like Cirez D. Light blue and lavender both seem to be, at least from my perspective, more popular and well known artists like BLACKPINK or Ariana Grande. 
 
