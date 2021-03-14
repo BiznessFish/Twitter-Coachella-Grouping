@@ -130,8 +130,6 @@ The graph should look something like this:
 
 To implement [Louvain](https://en.wikipedia.org/wiki/Louvain_method) community detection, click on the Statistics tab on the right hand side. Click 'Run' on the Modularity attribute, under Network Overview to calculate a modularity score. To visualize this, on the top left, set the color of each node using the calculated Modularity attribute. 
 
-![modulairty](/readme_images/modularity.png)
-
 ![colored graph](/readme_images/graph.png)
 
 For easier viewing, turn on "Show Node Labels".
