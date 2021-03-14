@@ -118,11 +118,11 @@ To build the adjcency matrix that you need to load into visNetwork, run the `bui
 
 ```python3 build_matrix.py All_tweets_semi```
 
-![build matrix](/readme_images/build_matrix.png)
+![build matrix](/readme_images/build_matrix.png | height = 250)
 
 To visualize it, import the adjacency matrix into a [Gephi](https://gephi.org/) session. I've used Force Atlas as the layout with these settings:
 
-![force atlas](/readme_images/force_atlas.png)
+![force atlas](/readme_images/force_atlas.png | width = 250)
 
 The graph should look something like this:
 
