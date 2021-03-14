@@ -124,7 +124,7 @@ In an R session, load in the matrix from a csv file into a dataframe, and conver
 
 ```df <- read.csv("relationship_matrix.csv")
 matrix <- as.matrix(df)
-
+```
 
 
 
