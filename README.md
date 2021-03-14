@@ -11,8 +11,6 @@ Artist co-mentions are collected into an adjacency matrix. A community detection
 
 This is a very basic way to visualize insights, if any, on the way people talk about musical artists, such as (hopefully) what artists are considered "similar" or are liked similarly by Twitter users.
 
-I tried to write the code here in such a way that it should be a simple task to do the same for just about any other topic of your choosing. All you should need are a list of things you're looking for within your tweets and a working knowledge of Regular Expression. 
-
 Below is an example of the kind of Tweets we are farming for:
 >**@tuhleequh**
 >
