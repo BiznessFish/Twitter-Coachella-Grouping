@@ -1,7 +1,7 @@
 # Twitter-Coachella-Grouping
 Visualize groupings of musical artists based on artist co-mentions within a tweet
 
-#### UPDATE: As of March 2021, most/all scrapers now no longer work, including twitterscraper which is used in this project.
+#### UPDATE: As of March 2021, many scrapers now no longer work, including twitterscraper which is used in this project. `twint` is a good alternative
 
 ## BACKGROUND
 
