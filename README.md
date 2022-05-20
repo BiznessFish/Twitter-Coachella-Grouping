@@ -9,7 +9,7 @@ This project uses a simple series of scripts to farm Tweets about Coachella, ana
 
 Artist co-mentions are collected into an adjacency matrix. A community detection algorithm (Louvain) is then used in order to group artists, and they are visualized using Gephi. 
 
-This is a very basic way to visualize insights, if any, on the way people talk about musical artists, such as (hopefully) what artists are considered "similar" or are liked similarly by Twitter users.
+This is a fairly intereseting way to visualize insights, on the way people talk about musical artists, such as (hopefully) what artists are considered "similar" or are liked similarly by Twitter users.
 
 Below is an example of the kind of Tweets we are farming for:
 >**@tuhleequh**
